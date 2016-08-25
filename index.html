@@ -2,9 +2,14 @@
 	<head>
 		<script src='M-mobile.js'></script>
 		<script>
- 			MJGetLocation(getLocationCallback);
 			function getLocationCallback(parm){
 				alert(parm);
+			}
+			
+			window.onload = function(){
+			
+			 	MJGetLocation(getLocationCallback);
+
 			}
 		</script>
 	</head>
