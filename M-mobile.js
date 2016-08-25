@@ -649,7 +649,7 @@ function MJGetLocation(callback) {
     try {
         if (os == "ios") {
             // ios add js here
-            window.location.href = "objc:getLocation:" + callback;
+            window.location.href = "objc:getLocation:::" + callback;
         } else if (os == "Android") {
             return window.inspur.getLocation(callback);
         }
