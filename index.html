@@ -9,11 +9,19 @@
 			window.onload = function(){
 				objcPlugin.getBaiduMapLocation('getLocationCallback');
 			}
+			
+			function openCamera('openCameraCallback'){
+				objcPlugin.openCamera('getLocationCallback');
+			}
+			function openCameraCallback(imageStr){
+			
+			}
 
 		</script>
 	</head>
 	<body>
 		helloworld , i'm mfz, i'm testing js call objc
+		<button onclick='openCamera()'>打开摄像头</button>
 	</body>
 	
 </html>
