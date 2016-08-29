@@ -23,6 +23,10 @@
 			function openCameraCallback(imageStr){
 				document.getElementById('img1').src = 'data:image/png;base64,'+imageStr
 			}
+			
+			function MCSetLocation(parm){
+				alert(parm);
+			}
 
 		</script>
 	</head>
@@ -30,6 +34,7 @@
 		helloworld , i'm mfz, i'm testing js call objc
 		<br/><button onclick='openImgPicker()'>openImgLib</button>
 		<br/><button onclick='openCamera()'>openCamera</button>
+		<br/><button onclick='MJGetLocation()'>getLocation</button>
 
 		<img id = 'img1' src = 'fengjing.jpg'/>
 	</body>
