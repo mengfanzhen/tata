@@ -18,7 +18,7 @@
 			}
 			
 			function openCamera(){
-				objcPlugin.openImgPicker('openCameraCallback');
+				objcPlugin.openCamera('openCameraCallback');
 			}
 			function openCamerarCallback(imageStr){
 				document.getElementById('img1').src = 'data:image/png;base64,'+imageStr
