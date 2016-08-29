@@ -10,18 +10,19 @@
 				objcPlugin.getBaiduMapLocation('getLocationCallback');
 			}
 			
-			function openCamera(){
-				objcPlugin.openCamera('openCameraCallback');
+			function openImgPicker(){
+				objcPlugin.openImgPicker('openImgPickerCallback');
 			}
-			function openCameraCallback(imageStr){
-				alert(imageStr);
+			function openImgPickerCallback(imageStr){
+				document.getElementById('img1').src = 'data:image/png;base64,'+imageStr
 			}
 
 		</script>
 	</head>
 	<body>
 		helloworld , i'm mfz, i'm testing js call objc
-		<br/><button onclick='openCamera()'>openCamera</button>
+		<br/><button onclick='openImgPicker()'>openCamera</button>
+		<img id = 'img1' src = 'fengjing.jpg'/>
 	</body>
 	
 </html>
