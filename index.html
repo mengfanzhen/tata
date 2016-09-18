@@ -29,7 +29,13 @@
 			}
 			
 			function wxShare(){
-				objcPlugin.wxShare();
+				var parm = {};
+				parm.content= "content Test";
+				parm.title= "title Test";
+				parm.url= "https://www.baidu.com";
+				var imagesArray = ["http://img5.imgtn.bdimg.com/it/u=937251071,4113545050&fm=21&gp=0.jpg"];
+				parm.images= imagesArray;
+				objcPlugin.wxShare(parm);
 			}
 
 		</script>
